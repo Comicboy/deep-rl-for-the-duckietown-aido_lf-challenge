@@ -37,8 +37,8 @@ sudo docker run hello-world
 # Next up we need to install duckietown shell, which enables us to use the duckietown devolopment environment through useful shell scripts
 pip3 install --no-cache-dir --user -U duckietown-shell
 
-#Verifying the installation
+# Verifying the installation
 which dts
 dts-version
 
-
+# 

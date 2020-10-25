@@ -36,9 +36,32 @@ sudo docker run hello-world
 
 # Next up we need to install duckietown shell, which enables us to use the duckietown devolopment environment through useful shell scripts
 pip3 install --no-cache-dir --user -U duckietown-shell
+pip3 install -U pip
+
 
 # Verifying the installation
 which dts
 dts-version
 
-# 
+# Installing the AIDO RL baseline repository
+git clone https://github.com/duckietown/challenge-aido_LF-baseline-RL-sim-pytorch.git
+cd challenge-aido_LF-baseline-RL-sim-pytorch
+sudo pip3 install -e .
+sudo pip3 install -e git://github.com/duckietown/gym-duckietown.git@aido2#egg=gym-duckietown
+cd ..
+
+# Installing the duckietown gym simulator
+git clone https://github.com/duckietown/gym-duckietown.git
+cd gym-duckietown
+pip3 install -e .
+cd ..
+
+# Cloning our repository and copying our map into the simulators map folder and replacing the manual control file
+git clone https://github.com/Comicboy/deep-rl-for-the-duckietown-aido_lf-challenge.git
+cp ~/deep-rl-for-the-duckietown-aido_lf-challenge/my.yaml ~/gym-duckietown/gym_duckietown/maps
+cd ~/gym-duckietown
+rm -r manual_control.py
+cp ~/deep-rl-for-the-duckietown-aido_lf-challenge/manual_control.py ~/gym-duckietown/
+
+# Starting manual control simulation with our map
+./manual_control.py --env-name Duckietown-my-v0 --map-name my

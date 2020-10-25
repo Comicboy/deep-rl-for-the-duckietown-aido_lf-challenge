@@ -11,24 +11,37 @@ This repository contains the homework of the "Deep Renforcement Learning 101" te
     4. [Future Improvements](#Future-Improvements)
 
 ## Introduction
- For hour homework for the subject of the Fundamentals of Deep Learning in the Budapest University of Technology and Echonomics, we have chosen to participate in the Duckietown Aido lf challange.
- In summary the challange is about providing rubber ducks safe travel in their self driving cars in their town: Duckietown. As us we providing the solution for the self driving cars AI. We are commited to help the AI learning for folloing lane that are have dynamic vehicles. More information you can find [here](https://www.duckietown.org/research/ai-driving-olympics). 
+For hour homework for the subject of the Fundamentals of Deep Learning in the Budapest University of Technology and Echonomics, we have chosen to participate in the Duckietown Aido lf challange. In summary the challange is about providing rubber ducks safe travel in their self driving cars in their town: Duckietown. As us we providing the solution for the self driving cars AI. We are commited to help the AI learning for folloing lane that are have dynamic vehicles. More information you can find [here](https://www.duckietown.org/research/ai-driving-olympics). 
  
- For solution of our AI, we have chosen the Residual Policy Learning(RPL).The RPL is a simple method for improving nondifferentiable policies using model-free Deep Reinforcement Learning(DRL).  This is a new method for complex robotic manipulation tasks, and with this we would like to implement it for our AI for our selfdriving cars. But for the RPL as the name dictates in the "residual", we need to have a baseline DRL as The RPL will learn from the residuals of the DRL. You can read more of the RPL [here](https://arxiv.org/abs/1812.06298).
- 
- So first we have to create the DRL.
- For creating the necesseary requirement for the challange, first we creating the baseline template for the DRL. In the later sections we provide the information that is needed for the installation and the useage of the DRL. For initial map we want to create a new place for the duckies to enjoy their ride, and for creating an enviroment that haven't been used before for not to use an already learnt eviroment.
+For solution of our AI, we have chosen the Deep Reinforcement Learning(DRL). DRL uses deep learning and reinforcement learning principles to create efficient algorithms applied on areas like robotics, video games, NLP (computer science), computer vision, education, transportation, finance and healthcare. Implementing deep learning architectures (deep neural networks) with reinforcement learning algorithms (Q-learning, actor critic, etc.) is capable of scaling to previously unsolvable problems. That is because DRL is able to learn from raw sensors or image signals as input.[1](#1)
+
+
+
+So first we have to create the DRL baseline.
+In the later sections we provide the information that is needed for the installation and the useage of the DRL.
+For initial map we want to create a new place for the duckies to enjoy their ride, and for creating an enviroment that haven't been used before for not to use an already learnt eviroment.
 
 <p align="center">
 <img src="media/mymap.png" width="300px"><br>
+Our map
 </p>
  
 ## Installation
 
-	This section provides information about, how the create the baseline for the DRL.
+This section provides information about, how the create the baseline for the DRL.
+
 ### Insallation-Requrements
 
-	* Ubuntu 18.04
+- Ubuntu 18.04
+- Python 3.6+
+- OpenAI gym
+- NumPy
+- Pyglet
+- PyYAML
+- cloudpickle
+- pygeometry
+- dataclasses (if using Python3.6)
+- PyTorch or Tensorflow (to use the scripts in `learning/`)
 
 ### Installation Steps 
 
@@ -38,4 +51,4 @@ This repository contains the homework of the "Deep Renforcement Learning 101" te
 
 ## Future-Improvements
 
-As for further improvements, as we created the baseline for the RDL, we would like to implement our algorythm to make a better improvement. And if we are satisfied with our algorythm, we will apply the RPL, and we will evaulate the difference and if the RPL provides better performance than a usual AI.
+###1 https://en.wikipedia.org/wiki/Deep_reinforcement_learning

@@ -16,9 +16,10 @@ For hour homework for the subject of the Fundamentals of Deep Learning in the Bu
  
 For solution of our AI, we have chosen the Deep Reinforcement Learning(DRL). DRL uses deep learning and reinforcement learning principles to create efficient algorithms applied on areas like robotics, video games, NLP (computer science), computer vision, education, transportation, finance and healthcare. Implementing deep learning architectures (deep neural networks) with reinforcement learning algorithms (Q-learning, actor critic, etc.) is capable of scaling to previously unsolvable problems. That is because DRL is able to learn from raw sensors or image signals as input.[1](#1)
 
-
+First we would like to focus on the Reinforcement Learning.(...)
 
 So first we have to create the DRL baseline.
+
 In the later sections we provide the information that is needed for the installation and the useage of the DRL.
 For initial map we want to create a new place for the duckies to enjoy their ride, and for creating an enviroment that haven't been used before for not to use an already learnt eviroment.
 

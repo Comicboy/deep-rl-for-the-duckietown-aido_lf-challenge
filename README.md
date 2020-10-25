@@ -9,6 +9,7 @@ This repository contains the homework of the "Deep Renforcement Learning 101" te
 	1.[Installation Requrements](#Insallation-Requrements)
     3. [Usage](#Usage)
     4. [Future Improvements](#Future-Improvements)
+    5. [References](#References)
 
 ## Introduction
 For hour homework for the subject of the Fundamentals of Deep Learning in the Budapest University of Technology and Echonomics, we have chosen to participate in the Duckietown Aido lf challange. In summary the challange is about providing rubber ducks safe travel in their self driving cars in their town: Duckietown. As us we providing the solution for the self driving cars AI. We are commited to help the AI learning for folloing lane that are have dynamic vehicles. More information you can find [here](https://www.duckietown.org/research/ai-driving-olympics). 
@@ -51,4 +52,5 @@ This section provides information about, how the create the baseline for the DRL
 
 ## Future-Improvements
 
-###1 https://en.wikipedia.org/wiki/Deep_reinforcement_learning
+#References
+#1 https://en.wikipedia.org/wiki/Deep_reinforcement_learning

@@ -49,6 +49,11 @@ This section provides information about, how to create the baseline for the DRL 
 
 ## Useage   
 
+
+<p align="center">
+<img src="media/pogogif.gif" width="300px"><br>
+Fist test of the baseline
+</p>
 ## Future-Improvements
 
 #References

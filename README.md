@@ -48,7 +48,17 @@ This section provides information about, how the create the baseline for the DRL
 
 
 
-## Useage   
+## Useage
+
+Change into the duckietown_rl directory and run the training script
+```
+$ cd duckietown_rl
+$ python3 -m scripts.train_cnn.py --seed 123
+```
+When it finishes, check it out (make sure you pass in the same seed as the one passed to the training script)
+```
+$ python3 -m scripts.test_cnn.py --seed 123
+```
 
 ## Future-Improvements
 

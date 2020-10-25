@@ -12,9 +12,11 @@ This repository contains the homework of the "Deep Renforcement Learning 101" te
     5. [References](#References)
 
 ## Introduction
-For hour homework for the subject of the Fundamentals of Deep Learning in the Budapest University of Technology and Echonomics, we have chosen to participate in the Duckietown Aido lf challange. In summary the challange is about providing rubber ducks safe travel in their self driving cars in their town: Duckietown. As us we providing the solution for the self driving cars AI. We are commited to help the AI learning for folloing lane that are have dynamic vehicles. More information you can find [here](https://www.duckietown.org/research/ai-driving-olympics). 
+As subject of our homework for the course Fundamentals of Deep Learning at the University of Technology and Economics, we have chosen to participate in the Duckietown AIDO LF competition. In a nutshel the challange is about providing the residents of Duckietown (a city populated by tiny rubber ducks) with means of transportation through self driving vehicles (also known as duckiebots). The goal of our assignment is to create a stable and well established deep renforcement learning algorithm, which can be utilized to power the AI driven vehicles of Duckietown, both in and out of a simulation environment. For more information, please check out the official page of the AIDO. [here](https://www.duckietown.org/research/ai-driving-olympics). 
  
+
 For solution of our AI, we have chosen the Deep Reinforcement Learning(DRL). DRL uses deep learning and reinforcement learning principles to create efficient algorithms applied on areas like robotics, video games, NLP (computer science), computer vision, education, transportation, finance and healthcare. Implementing deep learning architectures (deep neural networks) with reinforcement learning algorithms (Q-learning, actor critic, etc.) is capable of scaling to previously unsolvable problems. That is because DRL is able to learn from raw sensors or image signals as input.
+
 
 First we would like to focus on the Reinforcement Learning.(...)
 
@@ -22,7 +24,10 @@ So first we have to create the RL baseline from the duckietown document. This ba
 
 In the later sections we provide the information that is needed for the installation and the useage of the RL.
 
+
+First of all we have to create the DRL baseline.
 For initial map we want to create a new place for the duckies to enjoy their ride, and for creating an enviroment that haven't been used before for not to use an already learnt eviroment.
+
 
 <p align="center">
 <img src="media/mymap.png" width="300px"><br>
@@ -31,7 +36,7 @@ Our map
  
 ## Installation
 
-This section provides information about, how the create the baseline for the DRL.
+This section provides information about, how to create the baseline for the DRL algorithm.
 
 ### Insallation-Requrements
 

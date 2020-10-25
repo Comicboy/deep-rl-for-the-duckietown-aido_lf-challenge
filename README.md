@@ -1,6 +1,6 @@
 # Deep-Reinforcement-Learning-for-the-Duckietown-AIDO-lf-Challenge
 
-This repository contains the homework of the "Deep Renforcement Learning 101" team for course BMEVITMAV45.
+This repository contains the homework of the "Deep Reinforcement Learning 101" team for course BMEVITMAV45.
 
 ## Table of Contents
 1. [Deep Reinforcemen Learnin for the Duckietown AIDO lf  Challenge](#Deep-Reinforcement-Learning-for-the-Duckietown-AIDO-lf-Challenge)

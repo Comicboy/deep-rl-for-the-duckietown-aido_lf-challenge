@@ -6,6 +6,7 @@ This repository contains the homework of the "Deep Renforcement Learning 101" te
 1. [Deep Reinforcemen Learnin for the Duckietown AIDO lf  Challenge](#Deep-Reinforcement-Learning-for-the-Duckietown-AIDO-lf-Challenge)
     1. [Introduction](#Introduction)
     2. [Installation](#Installation)
+	1.[Installation Requrements](#Insallation-Requrements)
     3. [Usage](#Usage)
     4. [Future Improvements](#Future-Improvements)
 
@@ -17,8 +18,21 @@ This repository contains the homework of the "Deep Renforcement Learning 101" te
  
  So first we have to create the DRL.
  For creating the necesseary requirement for the challange, first we creating the baseline template for the DRL. In the later sections we provide the information that is needed for the installation and the useage of the DRL. For initial map we want to create a new place for the duckies to enjoy their ride, and for creating an enviroment that haven't been used before for not to use an already learnt eviroment.
+
+<p align="center">
+<img src="media/mymap.png" width="300px"><br>
+</p>
  
 ## Installation
+
+	This section provides information about, how the create the baseline for the DRL.
+### Insallation-Requrements
+
+	* Ubuntu 18.04
+
+### Installation Steps 
+
+
 
 ## Useage   
 

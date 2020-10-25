@@ -6,7 +6,7 @@ This repository contains the homework of the "Deep Renforcement Learning 101" te
 1. [Deep Reinforcemen Learnin for the Duckietown AIDO lf  Challenge](#Deep-Reinforcement-Learning-for-the-Duckietown-AIDO-lf-Challenge)
     1. [Introduction](#Introduction)
     2. [Installation](#Installation)
-	1.[Installation Requrements](#Insallation-Requrements)
+        1.[Installation Requrements](#Insallation-Requrements)
     3. [Usage](#Usage)
     4. [Future Improvements](#Future-Improvements)
     5. [References](#References)

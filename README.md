@@ -52,6 +52,7 @@ This section provides information about, how to create the baseline for the DRL 
 In order to install the repository's contents and start the simulation environment with our map please do:
 
 cd ~/deep-rl-for-the-duckietown-aido_lf-challenge
+
 ./setup.sh
 
 <p align="center">

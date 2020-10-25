@@ -3,7 +3,7 @@
 This repository contains the homework of the "Deep Renforcement Learning 101" team for course BMEVITMAV45.
 
 ## Table of Contents
-1. [Deep Reinforcemen Learnin for the Duckietown AIDO lf  Challenge](#Deep-Reinforcement-Learning-for-the-Duckietown-AIDO-lf-Challenge)
+1. [Deep Reinforcement Learning for the Duckietown AIDO lf Challenge](#Deep-Reinforcement-Learning-for-the-Duckietown-AIDO-lf-Challenge)
     1. [Introduction](#Introduction)
     2. [Installation](#Installation)
        1. [Installation Requrements](#Insallation-Requrements)
@@ -14,12 +14,20 @@ This repository contains the homework of the "Deep Renforcement Learning 101" te
 ## Introduction
 As subject of our homework for the course Fundamentals of Deep Learning at the University of Technology and Economics, we have chosen to participate in the Duckietown AIDO LF competition. In a nutshel the challange is about providing the residents of Duckietown (a city populated by tiny rubber ducks) with means of transportation through self driving vehicles (also known as duckiebots). The goal of our assignment is to create a stable and well established deep renforcement learning algorithm, which can be utilized to power the AI driven vehicles of Duckietown, both in and out of a simulation environment. For more information, please check out the official page of the AIDO. [here](https://www.duckietown.org/research/ai-driving-olympics). 
  
-In order to create a robust and efficient algorithm for the task we will utilize a particular field of machine learning which is known as Deep Reinforcement Learning. Deep Reinforcement Learning (DRL for short) uses deep and reinforcement learning principles to create efficient algorithms applied in the fields of robotics, video games, finance and healthcare just to mention a few. Implementations of deep learning architectures with reinforcement learning algorithms (Q-learning, actor critic, etc.) are capable of scaling to previously unsolvable problems, mostly because DRL (unlike other forms of machine learning) is able to learn from raw sensors or image signals as input, therefore can b trained similarly as humans or animals gain and utilize knowledge in decision making processes.[1](#1)
 
+For solution of our AI, we have chosen the Deep Reinforcement Learning(DRL). DRL uses deep learning and reinforcement learning principles to create efficient algorithms applied on areas like robotics, video games, NLP (computer science), computer vision, education, transportation, finance and healthcare. Implementing deep learning architectures (deep neural networks) with reinforcement learning algorithms (Q-learning, actor critic, etc.) is capable of scaling to previously unsolvable problems. That is because DRL is able to learn from raw sensors or image signals as input.
+
+
+First we would like to focus on the Reinforcement Learning.(...)
+
+So first we have to create the RL baseline from the duckietown document. This baseline provides us with an algorythm of Deep Deterministic Policy Gradient(DDPG). Deep Deterministic Policy Gradient (DDPG) is a model-free off-policy algorithm for learning continous actions. It combines ideas from DPG (Deterministic Policy Gradient) and DQN (Deep Q-Network). It uses Experience Replay and slow-learning target networks from DQN, and it is based on DPG, which can operate over continuous action spaces. For more information click [here](https://spinningup.openai.com/en/latest/algorithms/ddpg.html)
+
+In the later sections we provide the information that is needed for the installation and the useage of the RL.
 
 
 First of all we have to create the DRL baseline.
-In the following sections we provide the needed information for the installation of the devolopment environment and the useage of the DRL algorithm.
+For initial map we want to create a new place for the duckies to enjoy their ride, and for creating an enviroment that haven't been used before for not to use an already learnt eviroment.
+
 
 <p align="center">
 <img src="media/mymap.png" width="300px"><br>
@@ -47,9 +55,22 @@ This section provides information about, how to create the baseline for the DRL 
 
 
 
-## Useage   
+## Useage
+
+Change into the duckietown_rl directory and run the training script
+```
+$ cd duckietown_rl
+$ python3 -m scripts.train_cnn.py --seed 123
+```
+
+(Don't bother with the __path__ missing, the DDRG for the test is provided)
+
+When it finishes, check it out (make sure you pass in the same seed as the one passed to the training script)
+```
+$ python3 -m scripts.test_cnn.py --seed 123
+```
 
 ## Future-Improvements
 
-#References
-##1 https://en.wikipedia.org/wiki/Deep_reinforcement_learning
+For further improvements, we would like to implement our own algorythm.
+

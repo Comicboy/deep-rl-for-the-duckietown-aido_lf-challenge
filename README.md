@@ -43,15 +43,20 @@ This section provides information about, how to create the baseline for the DRL 
 - dataclasses (if using Python3.6)
 - PyTorch or Tensorflow (to use the scripts in `learning/`)
 
-### Installation Steps 
+### Installation Steps
+ In order to install the repository's contents and start the simulation environment with our map please clone this repository with
+ 
 
+    git clone https://github.com/Comicboy/deep-rl-for-the-duckietown-aido_lf-challenge.git
+
+After you cloned the repository please run the setup file which installs all the required files and runs the necessary modifications.
+
+    ./setup.sh
 
 
 ## Usage   
 
-In order to install the repository's contents and start the simulation environment with our map please download the setup.sh file and do:
-
-./setup.sh
+After you finished the installation and ran the setup script the simulation will start with our map.
 
 <p align="center">
 <img src="media/pogogif.gif" width="300px"><br>
@@ -61,3 +66,4 @@ First test of the RL baseline
 
 #References
 ##1 https://en.wikipedia.org/wiki/Deep_reinforcement_learning
+

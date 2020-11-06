@@ -56,8 +56,7 @@ cd gym-duckietown
 pip3 install -e .
 cd ..
 
-# Cloning our repository and copying our map into the simulators map folder and replacing the manual control file
-git clone https://github.com/Comicboy/deep-rl-for-the-duckietown-aido_lf-challenge.git
+# Copying our map into the simulators map folder and replacing the manual control file
 cp ~/deep-rl-for-the-duckietown-aido_lf-challenge/my.yaml ~/gym-duckietown/gym_duckietown/maps
 cd ~/gym-duckietown
 rm -r manual_control.py

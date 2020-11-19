@@ -19,7 +19,7 @@ dts-version
 git clone https://github.com/duckietown/challenge-aido_LF-baseline-RL-sim-pytorch.git
 cd challenge-aido_LF-baseline-RL-sim-pytorch
 sudo pip3 install -e .
-sudo pip3 install -e git://github.com/duckietown/gym-duckietown.git@aido2#egg=gym-duckietown
+sudo pip3 install -e git://github.com/duckietown/gym-duckietown.git@daffy#egg=gym-duckietown
 cd ..
 
 # Installing the duckietown gym simulator using Conda
@@ -49,4 +49,5 @@ cp ~/deep-rl-for-the-duckietown-aido_lf-challenge/manual_control.py ~/gym-duckie
 
 # Starting manual control simulation with our map in the Conda environment
 conda activate gym-duckietown
+export PYTHONPATH="$PWD/src"
 ./manual_control.py --env-name Duckietown-my-v0 --map-name-my

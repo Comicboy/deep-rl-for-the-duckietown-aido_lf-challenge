@@ -6,6 +6,9 @@
 sudo apt-get install python3
 sudo apt-get install -y python3-pip git git-lfs
 
+#Verify docker's installation
+sudo docker run hello-world
+
 # Next up we need to install duckietown shell, which enables us to use the duckietown development environment through useful shell scripts
 pip3 install --no-cache-dir --user -U duckietown-shell
 pip3 install -U pip
@@ -21,4 +24,3 @@ docker build -t gym-duckietown .
 
 # Launch an interactive terminal of our newly created image
 docker run -ti gym-duckietown /bin/bash
-

@@ -6,6 +6,9 @@
 sudo apt-get install python3
 sudo apt-get install -y python3-pip git git-lfs
 
+#Verify docker's installation
+sudo docker run hello-world
+
 # Next up we need to install duckietown shell, which enables us to use the duckietown development environment through useful shell scripts
 pip3 install --no-cache-dir --user -U duckietown-shell
 pip3 install -U pip
@@ -15,7 +18,7 @@ export PATH=$PATH:/root/.local/bin
 which dts
 dts-version
 
-# Installing th AIDO RL baseline repository
+# Installing the AIDO RL baseline repository
 git clone https://github.com/duckietown/challenge-aido_LF-baseline-RL-sim-pytorch.git
 cd challenge-aido_LF-baseline-RL-sim-pytorch
 sudo pip3 install -e .

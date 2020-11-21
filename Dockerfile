@@ -16,9 +16,6 @@ RUN pip install -e .
 RUN pip install -e git://github.com/duckietown/gym-duckietown.git@daffy#egg=gym-duckietown
 WORKDIR ..
 
-# Cloning our repository
-RUN git clone https://github.com/Comicboy/deep-rl-for-the-duckietown-aido_lf-challenge
-
 # Copying our map into the simulator's map folder
 COPY my.yaml /gym-duckietown/gym_duckietown/maps
 

@@ -51,6 +51,7 @@ This section provides information about, how to create the baseline for the DRL 
     git clone https://github.com/Comicboy/deep-rl-for-the-duckietown-aido_lf-challenge.git
 
 After you cloned the repository please run the setup file which installs all the required files and runs the necessary modifications.
+
 Using pip:
 
     ./setup.sh

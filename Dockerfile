@@ -20,7 +20,7 @@ WORKDIR ..
 RUN git clone https://github.com/Comicboy/deep-rl-for-the-duckietown-aido_lf-challenge
 
 # Copying our map into the simulator's map folder
-RUN cp /deep-rl-for-the-duckietown-aido_lf-challenge/my.yaml /gym-duckietown/gym_duckietown/maps
+COPY my.yaml /gym-duckietown/gym_duckietown/maps
 
 # At this point simply running manual_control.py might give 'ImportError: Library "fontconfig" not found', so avoiding this, the following steps are necessary
 RUN apt-get install -y pkg-config libfontconfig1-dev

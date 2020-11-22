@@ -58,7 +58,8 @@ Using pip:
 
 Using conda:
 
-    ./setup_conda.sh
+    bash -i setup_conda.sh
+
 
 Using docker:
 

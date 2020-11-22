@@ -42,15 +42,13 @@ pip install -r requirements.txt
 python setup.py develop --no-deps
 
 conda deactivate
-cd ..
 
 # Copying our map into the simulators map folder and replacing the manual control file
-cp ~/deep-rl-for-the-duckietown-aido_lf-challenge/my.yaml ~/gym-duckietown/gym_duckietown/maps
-cd ~/gym-duckietown
+cp ~/deep-rl-for-the-duckietown-aido_lf-challenge/my.yaml ~/gym-duckietown/src/gym_duckietown/maps
 rm -r manual_control.py
 cp ~/deep-rl-for-the-duckietown-aido_lf-challenge/manual_control.py ~/gym-duckietown/
 
 # Starting manual control simulation with our map in the Conda environment
 conda activate gym-duckietown
 export PYTHONPATH="$PWD/src"
-./manual_control.py --env-name Duckietown-my-v0 --map-name-my
+python3 manual_control.py --env-name Duckietown-my-v0 --map-name-my

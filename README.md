@@ -3,6 +3,8 @@
 This repository contains the homework of the "Deep Reinforcement Learning 101" team for course BMEVITMAV45.
 Team members: Bence Zsombor Hadlaczky (plans receives his BSc at the end of this semester), Dávid Antal Novák, Balázs Peisz (plans to receive his BSc at the end of this semester)
 
+The presentation of our team can be watched here: https://youtu.be/2izpob2dYtE
+
 ## Table of Contents
 1. [Deep Reinforcemen Learnin for the Duckietown AIDO lf  Challenge](#Deep-Reinforcement-Learning-for-the-Duckietown-AIDO-lf-Challenge)
     1. [Introduction](#Introduction)
